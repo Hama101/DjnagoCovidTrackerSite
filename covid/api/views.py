@@ -3,6 +3,11 @@ from . import scraper as s
 import requests as r
 from bs4 import BeautifulSoup
 # Create your views here.
+
+def nav(request):
+    return render(request , 'base.html')
+
+
 def home(request):
     return render(request,'home.html')
 
